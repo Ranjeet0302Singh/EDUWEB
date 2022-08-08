@@ -49,7 +49,7 @@ section {
 
 section h2 {
     text-align: center;
-    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
 h1, h2, h3, h4, h5 {
@@ -102,9 +102,10 @@ img {
     background: var(--color-danger);
     color: var(--color-white);
 }
-.window-scroll{
+
+.window-scroll {
     background: var(--color-primary);
-    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 /* ================NAVBAR====================== */
@@ -240,43 +241,50 @@ header {
 }
 
 /* Courses */
-.courses{
+.courses {
     margin-top: 10rem;
 }
-.courses__container{
+
+.courses__container {
     display: grid;
-    grid-template-columns:repeat(3,1fr) ;
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
-.course{
+
+.course {
     background: var(--color-bg1);
     text-align: center;
     border: 1px solid transparent;
     transition: var(--transition);
 }
-.course:hover{
+
+.course:hover {
     background: transparent;
     border-color: var(--color-primary);
 }
-.course__info{
+
+.course__info {
     padding: 2rem;
 }
-.course__info p{
-      margin: 1.2rem 0 2rem;
-      font-size: 0.9rem;
+
+.course__info p {
+    margin: 1.2rem 0 2rem;
+    font-size: 0.9rem;
 }
 
 /*  FAQs */
-.faqs{
-     background: var(--color-bg1);
-     box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.7);
+.faqs {
+    background: var(--color-bg1);
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.7);
 }
-.faqs__container{
+
+.faqs__container {
     display: grid;
-    grid-template-columns:  1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
 }
-.faq{
+
+.faq {
     padding: 2rem;
     display: flex;
     align-items: center;
@@ -284,13 +292,26 @@ header {
     height: fit-content;
     background: var(--color-primary);
     cursor: pointer;
+
 }
 
-.faq h4{
+.faq h4 {
     font-size: 1rem;
-    line-height:2.2 ;
+    line-height: 2.2;
 }
-.faq__icon{
-    align-items: flex-start;
+
+.faq__icon {
+    align-self: flex-start;
     font-size: 1.2rem;
+}
+
+.faq p {
+    margin-top: 0.8rem;
+    display: none;
+    
+}
+
+.faq.open p {
+    display: block;
+    
 }
